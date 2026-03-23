@@ -27,6 +27,9 @@ Many-to-Many mapping (Users ↔ Events)
 Pagination & sorting for large datasets
 🧱 Layered Architecture
 Controller → Service → Repository
+
+
+
 🛠 Tech Stack
 Java
 Spring Boot
@@ -36,6 +39,8 @@ JPA / Hibernate
 MySQL
 Postman (API testing)
 React (Frontend - optional)
+
+
 🏗️ Project Structure
 src/main/java/com/project
 │
@@ -45,6 +50,8 @@ src/main/java/com/project
 ├── entity         # JPA entities
 ├── security       # JWT & auth config
 └── dto            # Data transfer objects
+
+
 ⚙️ API Endpoints (Sample)
 Method	Endpoint	Description
 POST	/auth/register	Register user
@@ -52,25 +59,34 @@ POST	/auth/login	Authenticate user
 GET	/events	Get all events
 POST	/events	Create event (Admin)
 POST	/events/{id}/register	Register for event
+
+
 🔑 Key Learnings
 Designing entity relationships early prevents major refactoring later
 JWT integration requires careful handling of filters and security context
 Pagination is essential once data grows — not optional
 Clean architecture improves maintainability and testing
+
+
 ⚠️ Challenges Faced
 Managing Many-to-Many relationships without performance issues
 Securing endpoints with role-based access
 Structuring scalable service layers
+
+
 📈 Future Improvements
 Redis caching
 API rate limiting
 Microservices architecture
 Docker deployment
+
+
 ▶️ How to Run
 Clone the repository
 Configure MySQL in application.properties
 Run the application
 Use Postman to test APIs
-📬 Contribution
 
+
+📬 Contribution
 Open to suggestions and improvements. Feel free to fork and contribute.
